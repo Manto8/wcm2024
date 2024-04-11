@@ -3,6 +3,99 @@
 <p>網誌:<a href="https://manto8.github.io/wcm-2024/blog">https://manto8.github.io/wcm-2024/blog</a> </p>
 <p>簡報:<a href="https://manto8.github.io/wcm-2024/reveal">https://manto8.github.io/wcm-2024/reveal</a> </p>
 <p>倉儲:<a href="https://github.com/Manto8/wcm-2024">https://github.com/Manto8/wcm-2024</a></p>
+<h1>作業</h1>
+<h2>W6</h2>
+<h3>Git的發展歷史</h3>
+<p><span>ChatGPT 回答:</span></p>
+<p>Git 的发展历史可以追溯到2005年，由 Linux 内核的创建者 Linus Torvalds 开发。以下是 Git 的主要发展历程：</p>
+<ol>
+<li>
+<p><strong>2005年</strong>：Git 诞生。Linus Torvalds 在 Linux 内核社区中开始开发 Git，因为他对现有的版本控制系统不满意，并需要一个更好的系统来管理 Linux 内核的开发。他在Linux内核邮件列表上发布了 Git 的首个版本。</p>
+</li>
+<li>
+<p><strong>2007年</strong>：GitHub 成立。GitHub 是一个基于 Git 的代码托管平台，为开发者提供了一个集中的位置来存储、共享和协作开发代码。GitHub 的出现进一步推动了 Git 的普及和发展。</p>
+</li>
+<li>
+<p><strong>2008年</strong>：Git 1.5.6 发布。这个版本引入了 Git 的子模块功能，允许开发者将一个 Git 仓库嵌套在另一个仓库中。</p>
+</li>
+<li>
+<p><strong>2012年</strong>：GitHub 用户突破200万。GitHub 在这一年宣布拥有超过200万的代码库，证明了 Git 和 GitHub 在开发社区中的影响力和普及程度。</p>
+</li>
+<li>
+<p><strong>2016年</strong>：微软收购 GitHub。微软宣布以75亿美元的价格收购 GitHub，这进一步提高了 GitHub 的价值和影响力，并将其纳入微软的生态系统中。</p>
+</li>
+<li>
+<p><strong>2018年</strong>：Git 2.18 发布。这个版本带来了一些新功能和改进，如新的追踪分支切换策略，以提高性能和用户体验。</p>
+</li>
+<li>
+<p><strong>2020年</strong>：GitHub 支持更改默认分支名称。GitHub 宣布支持将存储库的默认分支从 "master" 更改为更中性的名称，如 "main"，以避免潜在的种族主义问题。</p>
+</li>
+</ol>
+<p>总的来说，Git 作为一个强大的分布式版本控制系统，经过多年的发展已成为开发者和团队不可或缺的工具之一。其开放、灵活和高效的特性使得它在软件开发、文档管理和团队协作等领域都得到了广泛应用和认可。</p>
+<p>Git的基本用法</p>
+<p><span>ChatGPT 回答:</span></p>
+<p>Git 的基本用法涵盖了许多方面，包括初始化仓库、添加文件、提交更改、查看状态和历史记录、创建分支、合并分支、远程操作等。以下是 Git 的基本用法的简要介绍：</p>
+<ol>
+<li>
+<p><strong>初始化仓库</strong>： 在开始一个新项目时，您需要在项目目录中初始化 Git 仓库。使用以下命令：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-csharp">git <span class="hljs-keyword">init</span> </code></div>
+</div>
+</li>
+<li>
+<p><strong>添加文件</strong>： 将要进行版本控制的文件添加到 Git 仓库中。例如，添加所有文件：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-csharp">git <span class="hljs-keyword">add</span> . </code></div>
+</div>
+</li>
+<li>
+<p><strong>提交更改</strong>： 提交添加的文件或已修改的文件到仓库中，创建一个新的版本记录：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-sql">git <span class="hljs-keyword">commit</span> <span class="hljs-operator">-</span>m "Your commit message" </code></div>
+</div>
+</li>
+<li>
+<p><strong>查看状态和历史记录</strong>： 可以随时查看仓库的状态和提交历史。查看当前状态：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-lua">git <span class="hljs-built_in">status</span> </code></div>
+</div>
+<p>查看提交历史记录：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">git <span class="hljs-built_in">log</span> </code></div>
+</div>
+</li>
+<li>
+<p><strong>创建分支</strong>： 分支可以让您在不影响主要代码的情况下进行实验或开发新功能。创建分支：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml">git branch <span class="hljs-tag">&lt;<span class="hljs-name">branch_name</span>&gt;</span> </span></code></div>
+</div>
+</li>
+<li>
+<p><strong>切换分支</strong>： 切换到新创建的分支：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml">git checkout <span class="hljs-tag">&lt;<span class="hljs-name">branch_name</span>&gt;</span> </span></code></div>
+</div>
+</li>
+<li>
+<p><strong>合并分支</strong>： 将一个分支的更改合并到当前分支：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml">git merge <span class="hljs-tag">&lt;<span class="hljs-name">branch_name</span>&gt;</span> </span></code></div>
+</div>
+</li>
+<li>
+<p><strong>远程操作</strong>： 如果您使用 Git 托管服务（如 GitHub、GitLab 等），可以与远程仓库进行交互。例如，将本地仓库连接到远程仓库：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-csharp">git remote <span class="hljs-keyword">add</span> origin &lt;remote_repository_URL&gt; </code></div>
+</div>
+<p>推送更改到远程仓库：</p>
+<div class="dark bg-gray-950 rounded-md">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-perl">git <span class="hljs-keyword">push</span> origin &lt;branch_name&gt; </code></div>
+</div>
+</li>
+</ol>
+<p>这些是 Git 的基本用法，涵盖了开始一个新项目、追踪和提交更改、查看项目状态和历史记录、创建和合并分支以及与远程仓库交互等基本操作。随着对 Git 的熟悉程度的提高，您将能够更深入地利用 Git 的功能来管理项目和协作开发。</p>
+<p><span></span></p>
+<p></p>
 <p></p>
 <p></p><h1>Codespaces</h1>
 <h1>cmsimde</h1>
